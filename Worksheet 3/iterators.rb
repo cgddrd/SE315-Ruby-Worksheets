@@ -85,6 +85,9 @@ def fac(n)
         
         # CG - Return the factorial of the range of numbers between 1 and the specified value ('n') (e.g. fac(20) -> 20!)
         # CG - We start the factorial calculation with the initial value of 1.
+        # CG - 'result' = the current resulting value of the calculation (for the first iteration, 'result' is set to the value passed
+        # into the 'inject()' function (e.g. in this case it would be '1')
+        # CG - 'el' represents the current iteration value of the Range object (e.g. 1, 2, 3, 4 ..)
         return (1..n).inject(1){ |result, el| result *= el }
         
     end
